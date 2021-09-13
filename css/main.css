@@ -10,7 +10,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: auto;
   z-index: -1;
   overflow: hidden;
   width: 100%;
@@ -134,5 +133,18 @@ body input, body button {
   right: 0px;
   top: 200px;
   z-index: -3;
+}
+
+@media (min-width: 900px) {
+  #pattern-bg img {
+    width: 100%;
+  }
+  #search {
+    text-align: center;
+    margin: 20px 0px;
+  }
+  #search div {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
