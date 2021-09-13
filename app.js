@@ -40,6 +40,7 @@ function loadData(ip){
           zoomOffset: -1,
           accessToken: 'pk.eyJ1Ijoic3RlcGhlbjAwOSIsImEiOiJja3RpcnVnaDQxNHJqMnltcmJraGFvM2htIn0.SWLQVfB6DGwLTRy7LX79Mw'
         }).addTo(mymap);
+        var marker = L.marker([data.location.lat, data.location.lng]).addTo(mymap);
     })
     .catch(err => console.error(err))
 
