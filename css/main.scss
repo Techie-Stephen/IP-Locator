@@ -5,15 +5,48 @@
     box-sizing:border-box;
 }
 body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+
     background: url('../images/pattern-bg.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: top;
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    color:hsl(0, 0%, 17%);
+
+    input, button{
+        font-family: 'Rubik', sans-serif;
+        font-size: 17px;
+        padding:0;
+        margin:0;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+    }
 }
 
 h1{
     color: #FFFFFF;
     text-align: center;
+}
+
+#search{
+    text-align: center;
+    div{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    input{
+        color: hsl(0, 0%, 59%);
+    }
+
+    button{
+        background: #000000;
+        color: #FFFFFF;
+        font-weight: 900;
+    }
 }
