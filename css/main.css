@@ -105,8 +105,7 @@ body input, body button {
   height: 100vh;
   position: absolute;
   right: 0px;
-  top: 0px;
-  background: red;
-  z-index: -5;
+  top: 200px;
+  z-index: -3;
 }
 /*# sourceMappingURL=main.css.map */
