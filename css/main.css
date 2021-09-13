@@ -6,13 +6,16 @@
           box-sizing: border-box;
 }
 
+#pattern-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
-  background: url("../images/pattern-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
   color: #2b2b2b;
 }
 
@@ -26,16 +29,20 @@ body input, body button {
   outline: none;
 }
 
-h1 {
+#wrapper {
+  padding: 5%;
+}
+
+#wrapper h1 {
   color: #FFFFFF;
   text-align: center;
 }
 
-#search {
+#wrapper #search {
   text-align: center;
 }
 
-#search div {
+#wrapper #search div {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -49,13 +56,17 @@ h1 {
   overflow: hidden;
 }
 
-#search input {
+#wrapper #search input {
   color: #969696;
 }
 
-#search button {
+#wrapper #search button {
   background: #000000;
   color: #FFFFFF;
   font-weight: 900;
+}
+
+#wrapper #details {
+  background: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */

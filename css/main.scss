@@ -4,14 +4,17 @@
     margin:0;
     box-sizing:border-box;
 }
+
+#pattern-bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
 body{
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
-
-    background: url('../images/pattern-bg.png');
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: top;
     color:hsl(0, 0%, 17%);
 
     input, button{
@@ -25,28 +28,37 @@ body{
     }
 }
 
-h1{
-    color: #FFFFFF;
-    text-align: center;
-}
 
-#search{
-    text-align: center;
-    div{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        overflow: hidden;
-    }
+#wrapper{
+    padding: 5%;
 
-    input{
-        color: hsl(0, 0%, 59%);
-    }
-
-    button{
-        background: #000000;
+    h1{
         color: #FFFFFF;
-        font-weight: 900;
+        text-align: center;
     }
+    
+    #search{
+        text-align: center;
+        div{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        input{
+            color: hsl(0, 0%, 59%);
+        }
+
+        button{
+            background: #000000;
+            color: #FFFFFF;
+            font-weight: 900;
+        }
+    }
+    #details{
+        background: #FFFFFF;
+    }
+
 }
