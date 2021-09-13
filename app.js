@@ -5,6 +5,7 @@ const isp_output = document.getElementById('isp')
 const txt_search = document.getElementById('txt-search')
 const btn_search = document.getElementById('btn-search')
 
+// var var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 btn_search.addEventListener('click', function(){
     let ip = txt_search.value
@@ -41,6 +42,7 @@ function loadData(ip){
           accessToken: 'pk.eyJ1Ijoic3RlcGhlbjAwOSIsImEiOiJja3RpcnVnaDQxNHJqMnltcmJraGFvM2htIn0.SWLQVfB6DGwLTRy7LX79Mw'
         }).addTo(mymap);
         var marker = L.marker([data.location.lat, data.location.lng]).addTo(mymap);
+        console.log(mymap)
     })
     .catch(err => console.error(err))
 
