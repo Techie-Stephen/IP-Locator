@@ -52,10 +52,12 @@ body{
             align-items: center;
             border-radius: 10px;
             overflow: hidden;
+            width: 60%;
         }
 
         input{
             color: hsl(0, 0%, 59%);
+            flex: 2;
         }
 
         button{
