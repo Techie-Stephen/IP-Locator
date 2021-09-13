@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <!-- <p>Search for any IP address or domain</p> -->
-
   <div id="pattern-bg">
     <img src="images/pattern-bg.png" alt="">
   </div>
@@ -23,7 +21,7 @@
   
     <section id="search">
     <div>
-      <input type="text" id="txt-search">
+      <input type="text" id="txt-search" placeholder="Search for any IP address or domain">
       <button type="button" id="btn-search">></button>
     </div>
     </section>
@@ -61,17 +59,6 @@
  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
  crossorigin=""></script>  
- <script>
-    var mymap = L.map('map').setView([51.505, -0.09], 13);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
-      id: 'mapbox/streets-v11',
-      tileSize: 512,
-      zoomOffset: -1,
-      accessToken: 'pk.eyJ1Ijoic3RlcGhlbjAwOSIsImEiOiJja3RpcnVnaDQxNHJqMnltcmJraGFvM2htIn0.SWLQVfB6DGwLTRy7LX79Mw'
-    }).addTo(mymap);
- </script>
  <script src="app.js"></script>
 </body>
 </html>

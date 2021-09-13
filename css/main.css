@@ -28,9 +28,10 @@ body input, body button {
   font-size: 17px;
   padding: 0;
   margin: 0;
-  padding: 12px 15px;
+  padding: 13px 15px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 #wrapper {
@@ -71,6 +72,26 @@ body input, body button {
           flex: 2;
 }
 
+#wrapper #search input::-webkit-input-placeholder {
+  color: #969696;
+  font-size: 16px;
+}
+
+#wrapper #search input:-ms-input-placeholder {
+  color: #969696;
+  font-size: 16px;
+}
+
+#wrapper #search input::-ms-input-placeholder {
+  color: #969696;
+  font-size: 16px;
+}
+
+#wrapper #search input::placeholder {
+  color: #969696;
+  font-size: 16px;
+}
+
 #wrapper #search button {
   background: #000000;
   color: #FFFFFF;
@@ -82,6 +103,8 @@ body input, body button {
   border-radius: 10px;
   overflow: hidden;
   padding: 5%;
+  width: 60%;
+  margin: 0px auto;
 }
 
 #wrapper #details div {
