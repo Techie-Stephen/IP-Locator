@@ -5,8 +5,7 @@ const isp_output = document.getElementById('isp')
 const txt_search = document.getElementById('txt-search')
 const btn_search = document.getElementById('btn-search')
 
-// const mymap = L.map('map').setView([0, 0], 1);
-var mymap = L.map('map').setView([0, 0], 1);
+const mymap = L.map('map').setView([0, 0], 5);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
           attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
           maxZoom: 18,
@@ -38,16 +37,17 @@ function loadData(ip){
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        ip_output.innerText = data.ip
-        location_output.innerText = `${data.location.city}, ${data.location.country}`
-        timezone_output.innerText = 'UTC ' + data.location.timezone
-        isp_output.innerText = data.isp
+        console.log(mymap)
+
+        ip_output.textContent = data.ip
+        location_output.textContent = `${data.location.city}, ${data.location.country}`
+        timezone_output.textContent = 'UTC ' + data.location.timezone
+        isp_output.textContent = data.isp
         
         // L.map.setView([data.location.lat, data.location.lng], 13);
         
-        // L.LatLng(data.location.lat, data.location.lng)
+        L.LatLng(data.location.lat, data.location.lng)
         marker.setLatLng([data.location.lat, data.location.lng])
-        console.log(mymap)
     })
     .catch(err => console.error(err))
 
