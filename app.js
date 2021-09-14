@@ -5,7 +5,7 @@ const isp_output = document.getElementById('isp')
 const txt_search = document.getElementById('txt-search')
 const btn_search = document.getElementById('btn-search')
 
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+// var mymap = L.map('map').setView([0, 0], 13);
 
 btn_search.addEventListener('click', function(){
     let ip = txt_search.value
@@ -31,7 +31,8 @@ function loadData(ip){
         location_output.innerText = `${data.location.city}, ${data.location.country}`
         timezone_output.innerText = 'UTC ' + data.location.timezone
         isp_output.innerText = data.isp
-
+        
+        var mymap = L.map('map').setView([[data.location.lat, data.location.lng]], 13);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
           attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
           maxZoom: 18,
