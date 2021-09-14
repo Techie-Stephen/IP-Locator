@@ -6,6 +6,17 @@ const txt_search = document.getElementById('txt-search')
 const btn_search = document.getElementById('btn-search')
 
 // var mymap = L.map('map').setView([0, 0], 13);
+const mymap = L.map('map').setView([0, 0], 1);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox/streets-v11',
+          tileSize: 512,
+          zoomOffset: -1,
+          accessToken: 'pk.eyJ1Ijoic3RlcGhlbjAwOSIsImEiOiJja3RpcnVnaDQxNHJqMnltcmJraGFvM2htIn0.SWLQVfB6DGwLTRy7LX79Mw'
+        }).addTo(mymap);
+var marker = L.marker([0, 0]).addTo(mymap);
+
 
 btn_search.addEventListener('click', function(){
     let ip = txt_search.value
@@ -32,15 +43,8 @@ function loadData(ip){
         timezone_output.innerText = 'UTC ' + data.location.timezone
         isp_output.innerText = data.isp
         
-        var mymap = L.map('map').setView([data.location.lat, data.location.lng], 13);
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-          maxZoom: 18,
-          id: 'mapbox/streets-v11',
-          tileSize: 512,
-          zoomOffset: -1,
-          accessToken: 'pk.eyJ1Ijoic3RlcGhlbjAwOSIsImEiOiJja3RpcnVnaDQxNHJqMnltcmJraGFvM2htIn0.SWLQVfB6DGwLTRy7LX79Mw'
-        }).addTo(mymap);
+        // L.map.setView([data.location.lat, data.location.lng], 13);
+        
         var marker = L.marker([data.location.lat, data.location.lng]).addTo(mymap);
         console.log(mymap)
     })
