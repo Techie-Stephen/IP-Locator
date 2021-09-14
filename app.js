@@ -32,7 +32,7 @@ function loadData(ip){
         timezone_output.innerText = 'UTC ' + data.location.timezone
         isp_output.innerText = data.isp
         
-        var mymap = L.map('map').setView([[data.location.lat, data.location.lng]], 13);
+        var mymap = L.map('map').setView([data.location.lat, data.location.lng], 13);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
           attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
           maxZoom: 18,
