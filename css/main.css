@@ -8,6 +8,11 @@
 
 a {
   text-decoration: none;
+  color: #2b2b2b;
+}
+
+ul {
+  list-style: none;
 }
 
 #pattern-bg {
@@ -180,7 +185,6 @@ footer ul li a i {
 
 footer p a {
   font-weight: bold;
-  color: #2b2b2b;
 }
 
 @media (min-width: 1024px) {

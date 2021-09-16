@@ -6,6 +6,10 @@
 }
 a{
     text-decoration: none;
+    color: hsl(0, 0%, 17%);
+}
+ul{
+    list-style: none;
 }
 #pattern-bg{
     position: absolute;
@@ -145,8 +149,6 @@ footer{
     p{
       a{
         font-weight: bold;
-        color: hsl(0, 0%, 17%);
-
       }
     }
   }
