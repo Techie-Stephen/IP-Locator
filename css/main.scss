@@ -42,7 +42,7 @@ header{
         color: #FFFFFF;
         text-align: center;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1.5em;
     }
     
     #search{
@@ -98,7 +98,7 @@ header{
                 letter-spacing: .1em;
             }
             h2{
-                font-size: 16px;
+                font-size: 1.1em;
                 font-weight: 600;
             }
 
@@ -116,7 +116,7 @@ header{
     z-index: -3;
 }
 
-.footer{
+footer{
     text-align: center;
     padding: 10px 5%;
     position: fixed;
