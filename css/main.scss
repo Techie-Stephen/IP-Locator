@@ -4,7 +4,9 @@
     margin:0;
     box-sizing:border-box;
 }
-
+a{
+    text-decoration: none;
+}
 #pattern-bg{
     position: absolute;
     top: 0;
@@ -117,6 +119,10 @@ body{
 .footer{
     text-align: center;
     padding: 10px 5%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
   
     ul{
       display: flex;
@@ -139,6 +145,8 @@ body{
     p{
       a{
         font-weight: bold;
+        color: hsl(0, 0%, 17%);
+
       }
     }
   }
