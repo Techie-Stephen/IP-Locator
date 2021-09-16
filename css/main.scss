@@ -47,11 +47,12 @@ body{
         text-align: center;
         margin: 20px 0px;
         div{
-            display: inline-flex;
+            display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 10px;
             overflow: hidden;
+            margin: 0 auto;
             width: 85%;
         }
 
@@ -109,22 +110,23 @@ body{
     height: 60vh;
     position: absolute;
     right: 0px;
-    top: 300px;
+    top: 250px;
     z-index: -3;
 }
 
-@media (min-width:900px) {
+@media (min-width:1024px) {
     #pattern-bg{
         img{
             width: 100%;
         }
     }
+
     #wrapper{
         #search{
             text-align: center;
             margin: 20px 0px;
             div{
-                width: 30%;
+                width: 40%;
             }
         }
         
@@ -148,5 +150,11 @@ body{
             border-left: none;
         }
     }
+    }
+
+    #map{
+        top: 180px;
+        height: 80vh;
+
     }
 }

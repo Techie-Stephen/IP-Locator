@@ -50,9 +50,9 @@ body input, body button {
 }
 
 #wrapper #search div {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -61,6 +61,7 @@ body input, body button {
           align-items: center;
   border-radius: 10px;
   overflow: hidden;
+  margin: 0 auto;
   width: 85%;
 }
 
@@ -134,11 +135,11 @@ body input, body button {
   height: 60vh;
   position: absolute;
   right: 0px;
-  top: 300px;
+  top: 250px;
   z-index: -3;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   #pattern-bg img {
     width: 100%;
   }
@@ -147,7 +148,7 @@ body input, body button {
     margin: 20px 0px;
   }
   #wrapper #search div {
-    width: 30%;
+    width: 40%;
   }
   #wrapper #details {
     padding: 3%;
@@ -169,6 +170,10 @@ body input, body button {
   }
   #wrapper #details div:first-child {
     border-left: none;
+  }
+  #map {
+    top: 180px;
+    height: 80vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
