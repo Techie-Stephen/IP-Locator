@@ -42,23 +42,23 @@ body input, body button {
   cursor: pointer;
 }
 
-header {
+main {
   padding: 5%;
 }
 
-header h1 {
+main h1 {
   color: #FFFFFF;
   text-align: center;
   font-weight: 500;
   font-size: 1.5em;
 }
 
-header #search {
+main #search {
   text-align: center;
   margin: 20px 0px;
 }
 
-header #search div {
+main #search div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,40 +74,40 @@ header #search div {
   width: 85%;
 }
 
-header #search input {
+main #search input {
   color: #969696;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
 
-header #search input::-webkit-input-placeholder {
+main #search input::-webkit-input-placeholder {
   color: #969696;
   font-size: 16px;
 }
 
-header #search input:-ms-input-placeholder {
+main #search input:-ms-input-placeholder {
   color: #969696;
   font-size: 16px;
 }
 
-header #search input::-ms-input-placeholder {
+main #search input::-ms-input-placeholder {
   color: #969696;
   font-size: 16px;
 }
 
-header #search input::placeholder {
+main #search input::placeholder {
   color: #969696;
   font-size: 16px;
 }
 
-header #search button {
+main #search button {
   background: #000000;
   color: #FFFFFF;
   font-weight: 900;
 }
 
-header #details {
+main #details {
   background: #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
@@ -119,12 +119,12 @@ header #details {
   top: 0;
 }
 
-header #details div {
+main #details div {
   padding: 5px 0px;
   text-align: center;
 }
 
-header #details div span {
+main #details div span {
   display: inline-block;
   color: #969696;
   font-weight: 500;
@@ -134,7 +134,7 @@ header #details div span {
   letter-spacing: .1em;
 }
 
-header #details div h2 {
+main #details div h2 {
   font-size: 1.1em;
   font-weight: 600;
 }
@@ -191,14 +191,14 @@ footer p a {
   #pattern-bg img {
     width: 100%;
   }
-  header #search {
+  main #search {
     text-align: center;
     margin: 20px 0px;
   }
-  header #search div {
+  main #search div {
     width: 40%;
   }
-  header #details {
+  main #details {
     padding: 3%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -207,16 +207,16 @@ footer p a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  header #details div {
+  main #details div {
     border-left: 1px solid #969696;
     text-align: left;
     width: 23%;
     padding: 0px 3%;
   }
-  header #details div span {
+  main #details div span {
     font-size: 12px;
   }
-  header #details div:first-child {
+  main #details div:first-child {
     border-left: none;
   }
   #map {
