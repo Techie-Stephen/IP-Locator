@@ -37,23 +37,23 @@ body input, body button {
   cursor: pointer;
 }
 
-#wrapper {
+header {
   padding: 5%;
 }
 
-#wrapper h1 {
+header h1 {
   color: #FFFFFF;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
 }
 
-#wrapper #search {
+header #search {
   text-align: center;
   margin: 20px 0px;
 }
 
-#wrapper #search div {
+header #search div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,40 +69,40 @@ body input, body button {
   width: 85%;
 }
 
-#wrapper #search input {
+header #search input {
   color: #969696;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
 
-#wrapper #search input::-webkit-input-placeholder {
+header #search input::-webkit-input-placeholder {
   color: #969696;
   font-size: 16px;
 }
 
-#wrapper #search input:-ms-input-placeholder {
+header #search input:-ms-input-placeholder {
   color: #969696;
   font-size: 16px;
 }
 
-#wrapper #search input::-ms-input-placeholder {
+header #search input::-ms-input-placeholder {
   color: #969696;
   font-size: 16px;
 }
 
-#wrapper #search input::placeholder {
+header #search input::placeholder {
   color: #969696;
   font-size: 16px;
 }
 
-#wrapper #search button {
+header #search button {
   background: #000000;
   color: #FFFFFF;
   font-weight: 900;
 }
 
-#wrapper #details {
+header #details {
   background: #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
@@ -114,12 +114,12 @@ body input, body button {
   top: 0;
 }
 
-#wrapper #details div {
+header #details div {
   padding: 5px 0px;
   text-align: center;
 }
 
-#wrapper #details div span {
+header #details div span {
   display: inline-block;
   color: #969696;
   font-weight: 500;
@@ -129,7 +129,7 @@ body input, body button {
   letter-spacing: .1em;
 }
 
-#wrapper #details div h2 {
+header #details div h2 {
   font-size: 16px;
   font-weight: 600;
 }
@@ -187,14 +187,14 @@ body input, body button {
   #pattern-bg img {
     width: 100%;
   }
-  #wrapper #search {
+  header #search {
     text-align: center;
     margin: 20px 0px;
   }
-  #wrapper #search div {
+  header #search div {
     width: 40%;
   }
-  #wrapper #details {
+  header #details {
     padding: 3%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -203,16 +203,16 @@ body input, body button {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #wrapper #details div {
+  header #details div {
     border-left: 1px solid #969696;
     text-align: left;
     width: 23%;
     padding: 0px 3%;
   }
-  #wrapper #details div span {
+  header #details div span {
     font-size: 12px;
   }
-  #wrapper #details div:first-child {
+  header #details div:first-child {
     border-left: none;
   }
   #map {
