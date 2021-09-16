@@ -15,7 +15,14 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
           zoomOffset: -1,
           accessToken: 'pk.eyJ1Ijoic3RlcGhlbjAwOSIsImEiOiJja3RpcnVnaDQxNHJqMnltcmJraGFvM2htIn0.SWLQVfB6DGwLTRy7LX79Mw'
         }).addTo(mymap);
-const marker = L.marker([0, 0]).addTo(mymap);
+
+
+const icon = L.icon({
+    iconUrl:'images/icon-location.svg',
+    iconSize: [50, 64],
+    // iconAnchor: [25, 16]
+})
+const marker = L.marker([0, 0], {icon}).addTo(mymap);
 
 
 btn_search.addEventListener('click', function(){
