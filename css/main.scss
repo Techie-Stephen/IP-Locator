@@ -114,6 +114,34 @@ body{
     z-index: -3;
 }
 
+.footer{
+    text-align: center;
+    padding: 10px 5%;
+  
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+  
+      li{
+        padding: 5px;
+        margin: 0px 10px;
+        a{
+          font-size: 16px;
+          i{
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  
+    p{
+      a{
+        font-weight: bold;
+      }
+    }
+  }
 @media (min-width:1024px) {
     #pattern-bg{
         img{
