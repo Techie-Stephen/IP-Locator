@@ -11,15 +11,6 @@ a{
 ul{
     list-style: none;
 }
-#pattern-bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-    width: 100%;
-}
-
 body{
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
@@ -38,6 +29,26 @@ body{
     }
 }
 
+#container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: gray;
+}
+#pattern-bg{
+    overflow: hidden;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+#map{
+    width: 100%;
+    height: auto;
+    background-color: rgb(124, 124, 124);
+}
 
 main{
     padding: 5%;
@@ -109,13 +120,6 @@ main{
         }
     }
 
-}
-
-#map{
-    width: 100%;
-    height: 80vh;
-    z-index: -3;
-    background-color: red;
 }
 
 footer{
