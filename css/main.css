@@ -142,10 +142,8 @@ main #details div h2 {
 #map {
   width: 100%;
   height: 80vh;
-  position: absolute;
-  right: 0px;
-  top: 250px;
   z-index: -3;
+  background-color: red;
 }
 
 footer {
@@ -218,9 +216,6 @@ footer p a {
   }
   main #details div:first-child {
     border-left: none;
-  }
-  #map {
-    top: 180px;
   }
 }
 /*# sourceMappingURL=main.css.map */
