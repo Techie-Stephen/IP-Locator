@@ -52,7 +52,7 @@ function loadData(ip){
         timezone_output.textContent = 'UTC ' + data.location.timezone
         isp_output.textContent = data.isp
         
-        mymap.setView([data.location.lat, data.location.lng], 14)
+        mymap.setView([data.location.lat, data.location.lng], 10)
         L.LatLng(data.location.lat, data.location.lng)
         marker.setLatLng([data.location.lat, data.location.lng])
     })
