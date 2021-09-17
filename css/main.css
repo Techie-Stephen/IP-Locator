@@ -39,20 +39,17 @@ body input, body button {
   left: 0;
   z-index: -1;
   background-color: gray;
-}
-
-#pattern-bg {
   overflow: hidden;
   width: 100%;
 }
 
-#pattern-bg img {
+#container #pattern-bg {
   width: 100%;
 }
 
-#map {
+#container #map {
   width: 100%;
-  height: auto;
+  height: 80vh;
   background-color: #7c7c7c;
 }
 
