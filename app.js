@@ -27,7 +27,6 @@ const icon = L.icon({
 })
 const marker = L.marker([0, 0], {icon}).addTo(mymap);
 
-
 btn_search.addEventListener('click', function(){
     loadData(txt_search.value)
 })
@@ -40,7 +39,7 @@ function loadData(ip){
          url = `https://geo.ipify.org/api/v1?apiKey=${GEO_APIKEY}&ipAddress=${ip}`
     }
     else{
-        url = `https://geo.ipify.org/api/v1?apiKey=${apiKey}`
+        url = `https://geo.ipify.org/api/v1?apiKey=${GEO_APIKEY}`
     }
 
     fetch(url)
