@@ -26,8 +26,7 @@ const marker = L.marker([0, 0], {icon}).addTo(mymap);
 
 
 btn_search.addEventListener('click', function(){
-    let ip = txt_search.value
-    loadData(ip)
+    loadData(txt_search.value)
 })
 
 function loadData(ip){
