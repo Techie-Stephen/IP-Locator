@@ -55,7 +55,7 @@ Being the very first time i had to work with map in an app. i learnt how to use 
 ## Author
 
 - Website - [Ohien Stephen](https://https://ohienstephen.github.io)
-- Frontend Mentor - [@Stephen0009](https://www.frontendmentor.io/profile/Stephen0009)
+- Frontend Mentor - [@Stephen0009](https://www.frontendmentor.io/profile/ohienstephen)
 - Twitter - [@ohienstephen](https://www.twitter.com/ohienstephen)
 
 
