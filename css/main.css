@@ -15,6 +15,14 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
@@ -58,8 +66,7 @@ main {
 main h1 {
   color: #FFFFFF;
   text-align: center;
-  font-weight: 500;
-  font-size: 1.5em;
+  font-weight: 600;
 }
 
 main #search {
@@ -80,7 +87,7 @@ main #search div {
   border-radius: 10px;
   overflow: hidden;
   margin: 0 auto;
-  width: 85%;
+  width: 80%;
 }
 
 main #search input {
@@ -92,22 +99,22 @@ main #search input {
 
 main #search input::-webkit-input-placeholder {
   color: #969696;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 main #search input:-ms-input-placeholder {
   color: #969696;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 main #search input::-ms-input-placeholder {
   color: #969696;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 main #search input::placeholder {
   color: #969696;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 main #search button {
@@ -121,7 +128,7 @@ main #details {
   border-radius: 10px;
   overflow: hidden;
   padding: 5%;
-  width: 85%;
+  width: 80%;
   margin: 0px auto;
   position: -webkit-sticky;
   position: sticky;
@@ -144,7 +151,6 @@ main #details div span {
 }
 
 main #details div h2 {
-  font-size: 1.1em;
   font-weight: 600;
 }
 
