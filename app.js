@@ -35,24 +35,22 @@ function loadData(ip){
 
     let url =''
     if(ip){
-         url = `https://geo.ipify.org/api/v1?apiKey=${apiKey}&ipAddress=8.8.8.8`
+         url = `https://geo.ipify.org/api/v1?apiKey=${apiKey}&ipAddress=${ip}`
     }
     else{
         url = `https://geo.ipify.org/api/v1?apiKey=${apiKey}`
     }
+
     fetch(url)
     .then(res => res.json())
     .then(data => {
-        console.log(data)
-        console.log(mymap)
-
         ip_output.textContent = data.ip
         location_output.textContent = `${data.location.city}, ${data.location.country}`
         timezone_output.textContent = 'UTC ' + data.location.timezone
         isp_output.textContent = data.isp
         
-        mymap.setView([data.location.lat, data.location.lng], 10)
-        L.LatLng(data.location.lat, data.location.lng)
+        mymap.setView([data.location.lat, data.location.lng], 12)
+        // L.LatLng(data.location.lat, data.location.lng)
         marker.setLatLng([data.location.lat, data.location.lng])
     })
     .catch(err => console.error(err))
