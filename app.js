@@ -5,6 +5,9 @@ const isp_output = document.getElementById('isp')
 const txt_search = document.getElementById('txt-search')
 const btn_search = document.getElementById('btn-search')
 
+const GEO_APIKEY = 'at_WdB1rJAU6KqRHbSzveVJWhWmYZVda'
+const MAPBOX_TOKEN = 'pk.eyJ1Ijoic3RlcGhlbjAwOSIsImEiOiJja3RpcnVnaDQxNHJqMnltcmJraGFvM2htIn0.SWLQVfB6DGwLTRy7LX79Mw'
+
 
 const mymap = L.map('map')
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -13,7 +16,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
           id: 'mapbox/streets-v11',
           tileSize: 512,
           zoomOffset: -1,
-          accessToken: 'pk.eyJ1Ijoic3RlcGhlbjAwOSIsImEiOiJja3RpcnVnaDQxNHJqMnltcmJraGFvM2htIn0.SWLQVfB6DGwLTRy7LX79Mw'
+          accessToken: MAPBOX_TOKEN
         }).addTo(mymap);
 
 
@@ -30,12 +33,11 @@ btn_search.addEventListener('click', function(){
 })
 
 function loadData(ip){
-    const apiKey = 'at_WdB1rJAU6KqRHbSzveVJWhWmYZVda'
     //https://geo.ipify.org/api/v1?apiKey=at_WdB1rJAU6KqRHbSzveVJWhWmYZVda&ipAddress=8.8.8.8
 
     let url =''
     if(ip){
-         url = `https://geo.ipify.org/api/v1?apiKey=${apiKey}&ipAddress=${ip}`
+         url = `https://geo.ipify.org/api/v1?apiKey=${GEO_APIKEY}&ipAddress=${ip}`
     }
     else{
         url = `https://geo.ipify.org/api/v1?apiKey=${apiKey}`
