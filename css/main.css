@@ -30,12 +30,21 @@ body {
   background: lightgray;
 }
 
-body input, body button {
+body input {
   font-family: 'Rubik', sans-serif;
   font-size: 17px;
   padding: 0;
   margin: 0;
-  padding: 13px 20px;
+  padding: 13px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body button {
+  padding: 0;
+  margin: 0;
+  padding: 13px 15px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -84,7 +93,7 @@ main #search div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   margin: 0 auto;
   width: 80%;
@@ -92,9 +101,8 @@ main #search div {
 
 main #search input {
   color: #969696;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  width: 100%;
+  font-weight: 100;
 }
 
 main #search input::-webkit-input-placeholder {
@@ -121,6 +129,7 @@ main #search button {
   background: #000000;
   color: #FFFFFF;
   font-weight: 900;
+  width: 40px;
 }
 
 main #details {

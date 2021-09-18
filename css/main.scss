@@ -4,31 +4,45 @@
     margin:0;
     box-sizing:border-box;
 }
+
 a{
     text-decoration: none;
     color: hsl(0, 0%, 17%);
 }
+
 ul{
     list-style: none;
 }
+
 h1{
     font-size: 1.2em;
 }
+
 h2{
     font-size: 0.9em;
 }
+
 body{
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     color:hsl(0, 0%, 17%);
     background: lightgray;
 
-    input, button{
+    input{
         font-family: 'Rubik', sans-serif;
         font-size: 17px;
         padding:0;
         margin:0;
-        padding: 13px 20px;
+        padding: 13px 15px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    button{
+        padding:0;
+        margin:0;
+        padding: 13px 15px;
         border: none;
         outline: none;
         cursor: pointer;
@@ -46,17 +60,15 @@ body{
     #pattern-bg{
         width: 100%;
     }
+    
     #map{
         width: 100%;
         height: 80vh;
     }
 }
 
-
-
 main{
     padding: 5%;
-
     h1{
         color: #FFFFFF;
         text-align: center;
@@ -70,7 +82,7 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 10px;
+            border-radius: 15px;
             overflow: hidden;
             margin: 0 auto;
             width: 80%;
@@ -78,7 +90,8 @@ main{
 
         input{
             color: hsl(0, 0%, 59%);
-            flex: 2;
+            width: 100%;
+            font-weight: 100;
 
             &::placeholder{
                 color: hsl(0, 0%, 59%);
@@ -90,6 +103,7 @@ main{
             background: #000000;
             color: #FFFFFF;
             font-weight: 900;
+            width: 40px;
         }
     }
     #details{
